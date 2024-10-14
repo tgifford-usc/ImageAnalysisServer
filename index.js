@@ -12,8 +12,8 @@ app.use(cors())
 
 async function analyseImage(dataURL) {
   // use the Gemini Vision API
-  //const base64Data = dataURL.split(',')[1];
-  const base64Data = dataURL;
+  const base64Data = dataURL.split(',')[1];
+  //const base64Data = dataURL;
 
   const body = {
     contents : [{
@@ -49,6 +49,11 @@ async function analyseImage(dataURL) {
   return "Could not analyse image";
 
 }
+
+
+app.get('/', async (req, res) => {  
+  res.json({ message: "This API expects a POST request with a base64 encoded dataURL in the imageURL property" });
+})
 
 
 app.post('/', async (req, res) => {  
