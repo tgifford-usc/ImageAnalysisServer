@@ -9,6 +9,8 @@ const port = 3000;
 // allows all cross-origin requests
 app.use(cors())
 
+// allow for json parsing of large dataURLs
+app.use(express.json({ limit: '20mb' }));
 
 async function analyseImage(dataURL) {
   // use the Gemini Vision API
