@@ -1,0 +1,22 @@
+{
+  "name": "imageanalysisserver",
+  "version": "1.0.0",
+  "description": "Simple image analysis web server proxying Google Gemini",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tgifford-usc/ImageAnalysisServer.git"
+  },
+  "author": "tgifford-usc",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/tgifford-usc/ImageAnalysisServer/issues"
+  },
+  "homepage": "https://github.com/tgifford-usc/ImageAnalysisServer#readme",
+  "dependencies": {
+    "express": "^4.21.1"
+  }
+}
