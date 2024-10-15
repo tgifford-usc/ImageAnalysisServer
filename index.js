@@ -15,12 +15,11 @@ app.use(express.json({ limit: '20mb' }));
 async function analyseImage(dataURL) {
   // use the Gemini Vision API
   const base64Data = dataURL.split(',')[1];
-  //const base64Data = dataURL;
 
   const body = {
     contents : [{
       parts: [
-          { text: "What is this picture?"},
+          { text: "How many headphones are in this picture"},
           { inline_data: {
               mime_type: "image/png",
               data: base64Data
