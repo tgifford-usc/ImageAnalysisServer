@@ -28,7 +28,7 @@ async function analyseImage(dataURL) {
         ]
       };
 
-  const geminiURL=`https://generativelanguage.googleapis.com/v1beta/models/gemini-1.5-flash:generateContent?key=${process.env.GEMINI_API_KEY}`;
+  const geminiURL=`https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent?key=${process.env.GEMINI_API_KEY}`;
 
   const response = await fetch(geminiURL, {
     method: 'post',
