@@ -21,7 +21,7 @@ async function analyseImage(dataURL) {
       parts: [
           { text: "What is this picture?"},
           { inline_data: {
-              mime_type: "image/png",
+              mime_type: "image/jpeg",
               data: base64Data
             }}
           ]}
